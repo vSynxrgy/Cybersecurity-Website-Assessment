@@ -1,24 +1,24 @@
-# FABA Web Application Security Assessment
+# Web Application Security Assessment
 
-> A cybersecurity assessment of the publicly accessible attack surface of the Find A Black Agent (FABA) platform, focused on authentication, identity verification, application security, privacy practices, and overall security posture.
+> A cybersecurity assessment of a publicly accessible web application focused on authentication, identity verification, application security, privacy practices, and overall security posture.
 
-> **Disclaimer:** This repository contains a sanitized version of the assessment that was approved for public release. No confidential information, proprietary data, or reproducible exploit details are included.
+> **Disclaimer:** This repository contains a sanitized version of a real-world security assessment approved for public release. All client-identifying information, proprietary details, and reproducible exploit information have been removed.
 
 ---
 
 ## Executive Summary
 
-This project documents an external, grey-box cybersecurity assessment of the Find A Black Agent (FABA) platform. The assessment evaluated publicly accessible portions of the application using passive reconnaissance and non-intrusive security testing techniques.
+This project documents an external, grey-box security assessment of a production web application. The assessment evaluated publicly accessible portions of the application using passive reconnaissance and non-intrusive security testing techniques.
 
 The review focused on authentication workflows, account onboarding, privacy controls, website security configuration, user input validation, and organizational trust indicators. Testing was conducted without bypassing authentication, exploiting vulnerabilities, or attempting unauthorized access.
 
-The assessment concluded that the platform demonstrates a solid baseline security posture while identifying opportunities to strengthen identity verification, onboarding governance, and browser security hardening.
+The assessment concluded that the application demonstrates a solid baseline security posture while identifying opportunities to strengthen identity verification, onboarding governance, and browser security hardening.
 
 ---
 
 ## Objectives
 
-- Assess the platform's public security posture
+- Assess the application's public security posture
 - Evaluate authentication and account management workflows
 - Review privacy practices and legal transparency
 - Assess website security configuration
@@ -57,7 +57,7 @@ The assessment concluded that the platform demonstrates a solid baseline securit
 
 ## Assessment Scope
 
-The assessment examined publicly accessible components of the platform, including:
+The assessment examined publicly accessible components of the application, including:
 
 - Website Architecture
 - Authentication System
@@ -74,7 +74,7 @@ The assessment examined publicly accessible components of the platform, includin
 
 ## Assessment Methodology
 
-The engagement followed a structured security review consisting of five phases:
+The engagement followed a structured security review consisting of five phases.
 
 ### Phase 1 — Website Reconnaissance
 
@@ -134,14 +134,12 @@ The engagement followed a structured security review consisting of five phases:
 - Basic input validation
 - XSS payloads did not execute during testing
 
----
-
 ### Opportunities for Improvement
 
 - Mandatory email verification
-- Stronger realtor identity verification
+- Stronger identity verification
 - Administrative onboarding approval
-- Multi-factor authentication
+- Multi-factor authentication (MFA)
 - Rate limiting
 - Browser security headers (CSP, X-Frame-Options, X-Content-Type-Options)
 - Formal vulnerability disclosure policy
@@ -152,24 +150,7 @@ The engagement followed a structured security review consisting of five phases:
 
 The assessment identified **no critical vulnerabilities** during testing.
 
-The primary risks centered around business trust and identity assurance rather than exploitable technical vulnerabilities. The most significant recommendations involved strengthening onboarding governance, identity verification, and public profile validation to reduce opportunities for impersonation and fraudulent account creation.
-
----
-
-## Repository Contents
-
-```
-.
-├── README.md
-├── report/
-│   └── FABA_Cybersecurity_Assessment_Report.pdf
-└── images/
-    ├── authentication-testing.png
-    ├── registration-workflow.png
-    ├── security-headers.png
-    ├── risk-matrix.png
-    └── recommendations.png
-```
+The primary risks centered around identity assurance and business trust rather than exploitable technical vulnerabilities. The most significant recommendations involved strengthening onboarding governance, identity verification, and user validation processes to reduce opportunities for impersonation and fraudulent account creation.
 
 ---
 
